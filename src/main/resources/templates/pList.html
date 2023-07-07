@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Photos</title>
+</head>
+<body>
+<h1>All Photos</h1>
+<div th:each="fileName : ${photoFileNames}">
+    <img src="/shop/items/GD.jpg" alt="Photo" />
+</div>
+</body>
+</html>
+
+
+
+<!--<img th:src="@{/shop/items/{fileName}(fileName=${fileName})}" alt="Photo" />-->
